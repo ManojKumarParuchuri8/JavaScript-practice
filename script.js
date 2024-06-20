@@ -10,7 +10,7 @@ createOrder(cart,function(orderId){
 
 
 
-createOrder(cart)
+createOrder(cart)  //createOrder is an API 
 .then(function(orderId){
     return proceedToPayment(orderId);
 })
@@ -24,7 +24,7 @@ createOrder(cart)
 
 
 const GITHUB_API=" https://api.github.com/users/ManojKumarParuchuri8"
-const user=fetch(GITHUB_API)
+const user=fetch(GITHUB_API)  //we will get promise object inside user variable
 console.log(user);
 user.then(function(data)
 {
